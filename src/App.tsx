@@ -12,6 +12,5 @@ const App = () => {
 
 export default App;
 
-// TODO: 2. Design the app and add content to Home and About
-// TODO: 3. Make project cards and link to socials
+// TODO: 3. Make project cards
 // TODO: 4. Make mock case study component
