@@ -1,13 +1,18 @@
 // 1. ABSTRACTS
-
+@use "abstracts/variables";
+@use "abstracts/placeholders";
+@use "abstracts/mixins";
 // 2. VENDORS
-
+@use "vendors/fontawesome";
 // 3. BASE
-
+@use "base/base";
+@use "base/reset";
+@use "base/typography";
 // 4. LAYOUT
-
+@use "layout/header";
 // 5. COMPONENTS
 
 // 6. PAGES
-
+@use "pages/home";
+@use "pages/about";
 // 7. THEMES

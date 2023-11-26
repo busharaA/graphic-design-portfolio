@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+@use "../abstracts/mixins" as *;
+
+.navbar {
+    @include flexbox-centered(space-between);
+    padding: 15px 45px;
+
+    .logo {
+        padding: 0 35px;
+        
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    .nav-container {
+        @include flexbox-centered(space-evenly);
+    
+        .nav-item {
+            list-style-type: none;
+            padding: 10px 35px;
+    
+            &__link {
+                text-decoration: none;
+                color: #000000;
+                position: relative;
+                transition: color 0.5s;
+
+                &:after {
+                    @extend %current-dest;
+                    background-color: $purple;
+                    width: 0;
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+                    color: $purple;
+                }
+
+                &:hover:after {
+                    width: 50%;
+                }
+            }
+
+            .current {
+                color: $purple;
+
+                &:after {
+                    @extend %current-dest;
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

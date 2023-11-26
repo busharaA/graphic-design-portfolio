@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+%current-dest {
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}

@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+.about {
+    width: 600px;
+    margin: 20px auto;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 48px;
+        color: $purple;
+    }
+
+    .socials {
+        text-align: center;
+        font-size: 48px;
+        margin-top: 35px;
+
+        &__icon {
+            margin: 30px;
+        }
+    }
+}
