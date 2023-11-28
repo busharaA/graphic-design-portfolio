@@ -11,8 +11,9 @@
 // 4. LAYOUT
 @use "layout/header";
 // 5. COMPONENTS
-
+@use "components/cards";
 // 6. PAGES
 @use "pages/home";
 @use "pages/about";
+@use "pages/portfolio";
 // 7. THEMES
