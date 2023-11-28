@@ -4,7 +4,7 @@ const Navbar = () => {
 	const location = useLocation();
 
 	return (
-		<nav className="navbar">
+		<header className="navbar">
 			<div className="logo">
 				<h3>AISHA BUSHARA</h3>
 			</div>
@@ -19,7 +19,7 @@ const Navbar = () => {
 					<Link to={"/portfolio"} className={`nav-item__link ${location.pathname === "/portfolio" ? "current" : ""}`}>Portfolio</Link>
 				</li>
 			</ul>
-		</nav>
+		</header>
 	);
 };
 
