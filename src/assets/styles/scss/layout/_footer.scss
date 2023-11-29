@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.footer {
+    @include flexbox-centered(space-between);
+    padding: 30px 80px;
+    margin-top: 60px;
+    border-top: 1px solid $lightgray;
+}
