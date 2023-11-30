@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 
 const Portfolio = () => {
     return (
-        <div className="portfolio">
+        <main className="portfolio">
             <h2>MY WORKS</h2>
             <div className="projects-container">
                 <section className="frontend-projects">
@@ -22,7 +22,7 @@ const Portfolio = () => {
                     </div>
                 </section>
             </div>
-        </div>
+        </main>
     );
 };
 

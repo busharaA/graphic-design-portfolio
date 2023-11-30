@@ -1,10 +1,16 @@
-.projects-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 60px;
+@use "../abstracts/placeholders" as *;
 
-    h3 {
-        text-align: center;
-        padding-bottom: 10px;
+.portfolio {
+    padding-top: 30px;
+
+    .projects-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 60px;
+    
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
     }
 }

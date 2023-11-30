@@ -4,7 +4,12 @@
 
 .navbar {
     @include flexbox-centered(space-between);
+    background-color: $lightgray-bg;
     padding: 15px 45px;
+    border-bottom: 1px solid $lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     .logo {
         padding: 0 35px;

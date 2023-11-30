@@ -1,8 +1,10 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
 
 .about {
     width: 600px;
-    margin: 20px auto;
+    margin: 0 auto;
+    padding-top: 30px;
 
     p {
         margin-top: 10px;
