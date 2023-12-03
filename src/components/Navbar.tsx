@@ -16,7 +16,7 @@ const Navbar = () => {
 					<Link to={"/about"} className={`nav-item__link ${location.pathname === "/about" ? "current" : ""}`}>About</Link>
 				</li>
 				<li className="nav-item">
-					<Link to={"/portfolio"} className={`nav-item__link ${location.pathname === "/portfolio" ? "current" : ""}`}>Portfolio</Link>
+					<Link to={"/portfolio"} className={`nav-item__link ${location.pathname.includes("/portfolio")  ? "current" : ""}`}>Portfolio</Link>
 				</li>
 			</ul>
 		</header>

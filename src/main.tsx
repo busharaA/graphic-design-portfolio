@@ -7,6 +7,7 @@ import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Portfolio from "./pages/Portfolio.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
+import CaseStudy from "./pages/CaseStudy.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/portfolio",
-				element: <Portfolio />
+				element: <Portfolio />,
+			},
+			{
+				path: "/portfolio/:projectId",
+				element: <CaseStudy />
 			}
 		]
 	}

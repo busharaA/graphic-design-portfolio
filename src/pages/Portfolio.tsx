@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 
 const Portfolio = () => {
@@ -8,17 +9,29 @@ const Portfolio = () => {
                 <section className="frontend-projects">
                     <h3>Frontend</h3>
                     <div className="cards-container">
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
                     </div>
                 </section>
                 <section className="design-projects">
                     <h3>Graphic design</h3>
                     <div className="cards-container">
-                        <ProjectCard />
-                        <ProjectCard />
-                        <ProjectCard />
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
+                        <Link to={"/portfolio/1"}>
+                            <ProjectCard />
+                        </Link>
                     </div>
                 </section>
             </div>
