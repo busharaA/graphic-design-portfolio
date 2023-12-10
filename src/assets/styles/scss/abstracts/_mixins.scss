@@ -3,3 +3,7 @@
     justify-content: $justify-content;
     align-items: center;
 }
+
+@mixin content-width($width) {
+    width: $width;
+}

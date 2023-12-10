@@ -14,5 +14,4 @@ const App = () => {
 
 export default App;
 
-// TODO: 4. Make mock case study component
 // TODO: 5. Make the app website responsive

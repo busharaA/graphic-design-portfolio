@@ -6,11 +6,29 @@
     .projects-container {
         display: flex;
         justify-content: space-evenly;
-        margin: 0 60px;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 10px 20px 0;
     
         h3 {
             text-align: center;
             padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio {
+        .projects-container {
+            flex-direction: row;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .portfolio {
+        .projects-container {
+            margin: 10px 60px 0;
         }
     }
 }

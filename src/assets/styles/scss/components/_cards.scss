@@ -3,6 +3,7 @@
 .cards-container {
     display: grid;
     row-gap: 10px;
+    justify-items: center;
 
     a {
         text-decoration: none;
@@ -10,14 +11,14 @@
     }
 
     .card {
-        width: 330px;
+        width: 380px;
         border: 1px solid $lightgray;
         border-radius: 10px;
         padding: 5px;
         text-decoration: none;
     
         img {
-            height: 180px;
+            height: 208.5px;
             width: auto;
             border-radius: 8px;
         }
@@ -32,6 +33,19 @@
     
             p {
                 margin-bottom: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container {
+        .card {
+            width: 330px;
+
+            img {
+                height: 180px;
+                width: auto;
             }
         }
     }

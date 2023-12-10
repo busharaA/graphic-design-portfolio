@@ -1,5 +1,7 @@
+@use "../abstracts/mixins" as *;
+
 .case-study {
-    width: 900px;
+    @include content-width(400px);
     margin: 0 auto;
     padding-top: 30px;
 
@@ -9,10 +11,10 @@
         padding: 30px 0;
         
         .content-text, .single-image {
-            width: 400px;
+            @include content-width(400px);
 
             p {
-                padding-bottom: 15px;
+                padding-bottom: 30px;
             }
         }
 
@@ -21,14 +23,22 @@
         }
     }
 
+    .problem-solution {
+        flex-direction: column;
+    }
+
+    .design-process {
+        flex-direction: column-reverse;
+    }
+
     .design-preview {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 5px;
         padding: 40px 0;
 
         img {
-            width: 300px;
+            @include content-width(400px);
         }
     }
 
@@ -43,6 +53,89 @@
 
         img {
             padding-bottom: 15px;
+            @include content-width(400px);
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .case-study {
+        @include content-width(500px);
+    
+        .problem-solution, .design-process {
+            .content-text, .single-image {
+                @include content-width(500px);
+            }
+        }
+    
+        .design-preview {    
+            img {
+                @include content-width(500px);
+            }
+        }
+    
+        .design-system {
+            img {
+                @include content-width(500px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .case-study {
+        @include content-width(600px);
+    
+        .problem-solution, .design-process {
+            .content-text, .single-image {
+                @include content-width(600px);
+            }
+        }
+    
+        .design-preview {
+            grid-template-columns: 1fr 1fr;
+    
+            img {
+                width: 298px;
+            }
+        }
+    
+        .design-system {
+            img {
+                @include content-width(600px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .case-study {
+        width: 900px;
+
+        .problem-solution, .design-process {
+            flex-direction: row;
+
+            .content-text, .single-image {
+                width: 400px;
+    
+                p {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        .design-preview {
+            grid-template-columns: repeat(3, 1fr);
+    
+            img {
+                width: 297px;
+            }
+        }
+
+        .design-system {
+            img {
+                width: initial;
+            }
         }
     }
 }
