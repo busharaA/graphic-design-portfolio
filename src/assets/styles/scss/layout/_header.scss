@@ -12,7 +12,7 @@
     z-index: 1;
 
     .logo {
-        padding: 0 35px;
+        padding: 0;
         
         h3 {
             font-weight: 500;
@@ -63,7 +63,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    
-
-    // Normal navigation
+    .navbar {
+        .logo {
+            padding: 0 35px;
+        }
+    }
 }
