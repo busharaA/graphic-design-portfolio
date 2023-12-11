@@ -20,7 +20,6 @@
         }
     }
 
-    // Replace navigation with hamburger menu
     .nav-container {
         @include flexbox-centered(space-evenly);
     
@@ -29,36 +28,17 @@
             padding: 10px 35px;
     
             &__link {
-                text-decoration: none;
-                color: #000000;
-                position: relative;
-                transition: color 0.5s;
-
-                &:after {
-                    @extend %current-dest;
-                    background-color: $purple;
-                    width: 0;
-                    transition: all 0.5s;
-                }
-
-                &:hover {
-                    color: $purple;
-                }
-
-                &:hover:after {
-                    width: 50%;
-                }
+                @extend %link;
             }
 
-            .current {
-                color: $purple;
-
-                &:after {
-                    @extend %current-dest;
-                    width: 50%;
-                }
-            }
+            @extend %current-dest;
         }
+    }
+
+    .hamburger-menu {
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
     }
 }
 

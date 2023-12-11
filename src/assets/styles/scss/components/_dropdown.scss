@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+
+.dropdown {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 15px;
+    background-color: $lightgray-bg;
+    border-bottom: 1px solid $lightgray;
+
+    .dropdown-item {
+        padding: 20px 10px 20px;
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $lightgray;
+        }
+
+        &__link {
+            @extend %link;
+        }
+
+        @extend %current-dest;
+    }
+}

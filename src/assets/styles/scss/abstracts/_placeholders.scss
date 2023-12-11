@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-%current-dest {
+%highlighted-dest {
     content: "";
     height: 2px;
     position: absolute;
@@ -10,4 +10,37 @@
 
 %header-gap {
     margin-top: 71px;
+}
+
+%link {
+    text-decoration: none;
+    color: $black;
+    position: relative;
+    transition: color 0.5s;
+
+    &:after {
+        @extend %highlighted-dest;
+        background-color: $purple;
+        width: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        color: $purple;
+    }
+
+    &:hover:after {
+        width: 50%;
+    }
+}
+
+%current-dest {
+    .current {
+        color: $purple;
+
+        &:after {
+            @extend %highlighted-dest;
+            width: 50%;
+        }
+    }
 }
