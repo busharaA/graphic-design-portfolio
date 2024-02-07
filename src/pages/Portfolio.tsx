@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
+// import { Link } from "react-router-dom";
+// import ProjectCard from "../components/ProjectCard";
 
 const Portfolio = () => {
     return (
         <main className="portfolio">
             <h2>MY WORKS</h2>
-            <div className="projects-container">
+            <p>In development, to be added</p>
+            {/* <div className="projects-container">
                 <section className="frontend-projects">
                     <h3>Frontend</h3>
                     <div className="cards-container">
@@ -34,7 +35,7 @@ const Portfolio = () => {
                         </Link>
                     </div>
                 </section>
-            </div>
+            </div> */}
         </main>
     );
 };

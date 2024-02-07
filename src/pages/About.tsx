@@ -11,6 +11,9 @@ const About = () => {
                 <a className="socials__icon GitHub" href="https://github.com/busharaA">
                     <i className="fa-brands fa-github"></i>
                 </a>
+                <a className="socials__icon Figma" href="https://www.figma.com/proto/mh0twHjGSCuyqpTaim1P8H/Portfolio---Aisha-Bushara?node-id=751-720&starting-point-node-id=751%253A720&t=wRp4BwEacIc2xsAf-1&scaling=scale-down-width">
+                    <i className="fa-brands fa-figma"></i>
+                </a>
             </div>
         </main>
     );
